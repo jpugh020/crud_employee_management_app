@@ -29,4 +29,5 @@
 
 ## Screenshots
 ![Landing page of Application](https://github.com/jpugh020/crud_employee_management_app/blob/main/public/CRUD_APP_LOGIN.png)
+![Employee landing page of application](./public/Employee_access_page.png)
 
