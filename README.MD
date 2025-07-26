@@ -28,5 +28,5 @@
         - Custom (but VERY simple) interactive styling
 
 ## Screenshots
-    - ![Landing page of Application](public/CRUD_APP_LOGIN.png)
+    - ![Landing page of Application](./public/CRUD_APP_LOGIN.png)
 
