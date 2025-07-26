@@ -14,3 +14,19 @@
 
     - MongoDB & Mongoose API: MongoDB's BSON notation lends itself very well to JSON documents or templates. Also I chose this because the integration is very easy and user-friendly. 
 
+## Features
+
+    - I decided to use EJS for a relatively easy server-side rendering experience for the frontend, since the focus of this app was to manage employee information utilizing mongoDB and API calls. 
+
+    - I did not get a chance to add cases for every potential error or security exploit, but I added several features that are slightly more difficult to execute with SSR frameworks rather than client-side frameworks, such as: 
+        
+        - Simple secure state management through cookies to assign a JWT to identify logged-in users
+        - Secure password storage, retrieval, and comparison using cryptographic hashing algorithms
+        - Conditional case to prevent a manager from deleting themselves and causing a crash
+        - Conditional case to prevent deletion of either of the two listed test accounts
+        - Conditional rendering of login or employee header
+        - Custom (but VERY simple) interactive styling
+
+## Screenshots
+    - ![Landing page of Application](CRUD_APP_LOGIN.png)
+
