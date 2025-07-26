@@ -28,5 +28,5 @@
         - Custom (but VERY simple) interactive styling
 
 ## Screenshots
-    - ![Landing page of Application](./public/CRUD_APP_LOGIN.png)
+    - ![Landing page of Application](https://github.com/jpugh020/crud_employee_management_app/blob/main/public/CRUD_APP_LOGIN.png)
 
