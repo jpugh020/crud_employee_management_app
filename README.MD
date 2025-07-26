@@ -2,6 +2,8 @@
 
 ## Purpose
 
+I built this from scratch (No vibe coding / AI boilerplate) to get more practice with API integration and server engineering. I also sought to challenge myself further using Embedded JavaScript since it is a Server-Rendered language and requires more creative implimentations for interactivity and conditional rendering. 
+
     - Strengthen my understanding of asynchrounous API calls
     - Strengthen my understanding of developing a server with the Express JS library
     - Strengthen my understanding of database operations with MongoDB and the Mongoose API
