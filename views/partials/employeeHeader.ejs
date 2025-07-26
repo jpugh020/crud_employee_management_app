@@ -1,0 +1,11 @@
+<script src="buttonScript.js"></script>
+<nav id="nav" style="justify-content: start;">
+    <ul id="navList" style="display: flex; flex-direction: row; justify-content: space-between !important;">
+        <li>
+            <h2>Welcome, <%- name %></h2>
+        </li>
+        <li>
+            <form action="/logout" method="post"><button type="submit" id="logoutButton">Logout</button></form>
+        </li>
+    </ul>
+</nav>

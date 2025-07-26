@@ -1,0 +1,19 @@
+<div>
+    <h2>My role at the company is: <%- employee.role %></h2>
+    <h2>I <%- employee.isManager ? "am" : "am not" %> a manager</h2>
+
+</div>
+
+<div id="updateField">
+    <h2>Update my Info with the company</h2>
+    <form action="/employeeUpdate" method="post">
+        <input type="text" name="fName" placeholder="Update First Name: " />
+        <input type="text" name="lName" placeholder="Update Last Name: " />
+        <input type="text" name="username" placeholder="Update Username: " />
+        <input type="text" name="role" placeholder="Update Job Title: "  />
+        
+
+        <button type="submit">Submit Changes</button>
+    </form>
+</div>
+

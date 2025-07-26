@@ -1,0 +1,51 @@
+<% if(triedToDeleteSelf == "true") { %>
+    <script type="text/javascript" >alert("You can't delete yourself!")</script>
+<% triedToDeleteSelf = "false";} %>
+
+
+<div><%- include('./employee.ejs')%></div>
+<div id="newHireField">
+    <h2>Add a new employee to the company</h2>
+    <form action="/register" method="post">
+        <input type="text" name="fName" placeholder="Add First Name: " />
+        <input type="text" name="lName" placeholder="Add Last Name: " />
+        <input type="text" name="username" placeholder="Add Username: " />
+        <input type="text" name="role" placeholder="Add Job Title: " />
+        <label for="hired">Date of Hire</label>
+        <input type="date" name="hired"  />
+        <label for="isManager">Is this employee a manager? </label>
+        <input type="checkbox" name="isManager" id="isManager" value="isManager"  />
+        
+        
+
+        <button type="submit">Submit Changes</button>
+    </form>
+</div>
+
+
+<div style="align-self: flex-end; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1 style="justify-self: center">Current Employees</h1>
+<ul>
+<% employee_list.map((e, i) => { %>
+    <li>
+        <h2><%=e.fName + " " + e.lName%></h2>
+        <ul>
+            <li><h3><%= e.role %></h3></li>
+            <li><h3>They were hired on <%= e.hired.toDateString(); %></h3></li>
+            <li><h3>Their username is <%= e.username %></h3></li>
+            <li><h3>Their password hash is <%= e.password %></h3></li>
+            <li><h3>They are <%= e.isManager ? "a " : "not a "; %>manager</h3></li>
+            <% if(e.username !== "admin25" && e.username !== "employee1"){ %>
+                <li style="list-style-type: none;"><form action="/delete" method="post"><button type="submit" id="<%= "employee".concat(i.toString()) %>" value="<%= i %>" name="employeeIndex">Delete this Employee</button></form></li>
+            <% } else { %>
+                <li style="list-style-type: none;"><button type="submit"  onclick="alert('This button won\'t actually delete this employee since it is a test account, but it will delete others')"  name="employeeIndex">Delete this Employee</button></li>
+            <% } %>
+
+        </ul>
+    </li>
+<% }); %>
+
+</ul>
+
+</div>
+

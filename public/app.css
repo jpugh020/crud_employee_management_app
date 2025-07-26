@@ -1,0 +1,120 @@
+html {
+    scrollbar-width: none;
+}
+
+
+#login {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+input[type=text] {
+    width: 25em;
+    height: 1.5em;
+    background: none;
+    color: #fff;
+    font-size: medium;
+    border: none;
+    border-bottom: 2px white double;    
+
+
+}
+input[type=password] {
+    width: 25em;
+    height: 1.5em;
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px white double;
+    font-size: medium;
+}
+input:focus {
+    outline: none;
+    border-bottom: solid 4px white;
+}
+input::placeholder {
+    color: #fff;
+    opacity: .5;
+}
+button[type=submit] {
+    width: 7em;
+    background: none;
+    color: #fff;
+    border: 2px gray double;
+}
+button[type=submit]:hover {
+    cursor: pointer;
+    border: none;
+    outline-style: solid;
+   
+    
+}
+body {
+    background: #000;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: larger;
+    margin: 0;
+    
+}
+.loginInfo {
+    margin: 3%;
+    margin-left: 0;
+}
+.container {
+    margin: 0;
+    padding: 0.3rem;
+    margin-bottom: 2em;
+}
+#nav {
+    display: flex;
+    width: 100%;
+    height: 4em;
+    margin: 0;
+    flex-direction: row;
+    justify-content: end;
+}
+.navContainer {
+    display: flex;
+}
+
+#navList {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding-left: 0 !important;
+
+}
+#updateField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#updateField>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#updateField>form>input {
+    margin: 2%;
+}
+
+#newHireField>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newHireField>form>input {
+    margin: 2%;
+}
+#newHireField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
